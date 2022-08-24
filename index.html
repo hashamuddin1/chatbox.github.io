@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a4aae7e35.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <button class="open-button" onclick="openForm()">Support</button>
+    <div id="chat1" class="chat-popup">
+        <div id="chat">
+            <div id="header1">
+                <div id="headh1">
+                    <h1>Support</h1>
+                </div>
+                <div class="iconplace minimize">
+                    <i class="fa-solid fa-window-minimize fa-2x"></i>
+                </div>
+                <div class="iconplace">
+                    <i onclick="closeForm()" class="fa-solid fa-xmark fa-2x"></i>
+                </div>
+
+
+
+            </div>
+            <div id="messagecontent">
+                <div>
+                    <div class="mess2 receive">
+                        <div class="topmess">
+                            <h3 class="messtext">Sufiyan</h3>
+                            <div>10:55pm</div>
+                        </div>
+                        <div class="messtext">
+                            Salam How are you?
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mess2 send ">
+                        <div class="topmess">
+                            <h3 class="messtext">Hasham</h3>
+                            <div>11:02pm</div>
+                        </div>
+                        <div class="messtext">
+                            W Salam I am fine
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second msg -->
+                <div>
+                    <div class="mess2 receive">
+                        <div class="topmess">
+                            <h3 class="messtext">Sufiyan</h3>
+                            <div>10:55pm</div>
+                        </div>
+                        <div class="messtext">
+                            Where are you live?
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mess2 send ">
+                        <div class="topmess">
+                            <h3 class="messtext">Hasham</h3>
+                            <div>11:02pm</div>
+                        </div>
+                        <div class="messtext">
+                            I live in North Karachi
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third msg -->
+                <div>
+                    <div class="mess2 receive">
+                        <div class="topmess">
+                            <h3 class="messtext">Sufiyan</h3>
+                            <div>10:55pm</div>
+                        </div>
+                        <div class="messtext">
+                            Where are you live?
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mess2 send ">
+                        <div class="topmess">
+                            <h3 class="messtext">Hasham</h3>
+                            <div>11:02pm</div>
+                        </div>
+                        <div class="messtext">
+                            I live in North Karachi
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div id="message">
+                <input type="text" placeholder="Type Here">
+                <span><i class="fa-solid fa-paperclip fa-1x"></i></span>
+            </div>
+        </div>
+
+
+        <!-- js -->
+        <script>
+            function openForm() {
+                document.getElementById("chat1").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("chat1").style.display = "none";
+            }
+        </script>
+
+
+
+</body>
+
+</html>
